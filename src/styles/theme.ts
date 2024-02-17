@@ -105,8 +105,6 @@ const theme = {
   borderRadius,
 };
 
-export type Sizes = "xs" | "sm" | "md" | "lg" | "xl";
-
 export type ColorKeys = keyof typeof colors;
 export type TextColorKeys = keyof typeof textColors;
 export type FontWeightKeys = keyof typeof fontWeights;
