@@ -4,10 +4,10 @@ import type { CSSProp } from "styled-components";
 import type {
   ColorKeys,
   FontWeightKeys,
-  Sizes,
   TextColorKeys,
 } from "../../styles/theme";
 import { ButtonContainer } from "./style";
+import { Sizes } from "../../constants/types";
 
 export type ButtonVariants = "outlined" | "filled" | "transparent";
 
