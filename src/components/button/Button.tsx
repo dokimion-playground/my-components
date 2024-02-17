@@ -22,7 +22,7 @@ export interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
   css?: CSSProp;
 }
 
-export default function Button({
+const Button = ({
   customWidth = "fit-content",
   customHeight = "40px",
   color = "primary",
@@ -32,7 +32,7 @@ export default function Button({
   variant = "filled",
   children,
   ...props
-}: ButtonProps) {
+}: ButtonProps) => {
   return (
     <ButtonContainer
       customWidth={customWidth}
@@ -47,4 +47,6 @@ export default function Button({
       {children}
     </ButtonContainer>
   );
-}
+};
+
+export default Button;

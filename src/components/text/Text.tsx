@@ -22,7 +22,7 @@ export interface TextStyleProps {
 export type TextProps<T extends TextElement> =
   OverridableComponentPropsWithoutRef<T, TextStyleProps>;
 
-export default function Text<T extends TextElement = "p">({
+const Text = <T extends TextElement = "p">({
   children,
   size = "md",
   weight = "regular",
@@ -30,7 +30,7 @@ export default function Text<T extends TextElement = "p">({
   color = theme.textColors.default,
   align = "left",
   ...props
-}: TextProps<T>) {
+}: TextProps<T>) => {
   return (
     <TextContainer
       size={size}
@@ -43,4 +43,6 @@ export default function Text<T extends TextElement = "p">({
       {children}
     </TextContainer>
   );
-}
+};
+
+export default Text;
